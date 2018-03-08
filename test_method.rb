@@ -22,5 +22,10 @@ class TestMyReverse < Minitest::Test
         assert_equal([7,6,5,4,3,2,1], my_reverse(array))
     end
 
+    def test_reverse_of_array_of_strings
+        array = ["I","am","cool"]
+        assert_equal(["cool","am","I"], my_reverse(array))
+    end
+
 
 end
